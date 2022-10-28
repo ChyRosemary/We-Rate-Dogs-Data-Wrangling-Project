@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>We Rate Dogs-Data Wrangling Project-Act Report</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">We Rate Dogs-Data Wrangling Project-Act Report</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Project Overview
+</section>
+<section data-field="body" class="e-content">
+<section name="cf16" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a73b" id="a73b" class="graf graf--h3 graf--leading graf--title">We Rate Dogs-Data Wrangling Project-Act Report</h3><h3 name="2361" id="2361" class="graf graf--h3 graf-after--h3">Project Overview</h3><figure name="5217" id="5217" class="graf graf--figure graf-after--h3"><img class="graf-image" data-image-id="0*ml1BUxUhNeNAvt8o.png" data-width="900" data-height="746" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*ml1BUxUhNeNAvt8o.png"></figure><p name="439c" id="439c" class="graf graf--p graf-after--figure">This project is focused on displaying our data wrangling skills and visualization. The dataset used in the project is is the tweet archive of Twitter known as WeRateDogs. WeRateDogs is a Twitter account that rates people’s dogs with a humorous comment about the dog.</p><h4 name="350b" id="350b" class="graf graf--h4 graf-after--p">Dataset</h4><p name="b869" id="b869" class="graf graf--p graf-after--h4">These dataset was divided into three</p><ul class="postList"><li name="7292" id="7292" class="graf graf--li graf-after--p">The WeRateDogs Enhanced Twitter archive which contains data extracted from weratedogs twitter account, posted between November 15, 2015 and August 1, 2017. This data contains tweet id, dog ratings, dog stage and dog name that were taken from the text of the tweet.</li><li name="6a0b" id="6a0b" class="graf graf--li graf-after--li">The image predictions dataset that was programmatically downloaded, it contains the various image predictions of dog and confidence values</li><li name="88da" id="88da" class="graf graf--li graf-after--li">The retweet and favorite count dataset that was extracted from twitter API. This contains tweet ids and its favorite and retweet count</li></ul><h4 name="23fa" id="23fa" class="graf graf--h4 graf-after--li">Assessing and Cleaning</h4><p name="c5f0" id="c5f0" class="graf graf--p graf-after--h4">For analysis , the above dataset was assessed both visually and programmatically. Several Quality and Tidiness issues were discovered which wouldn&#39;t have been great for my analysis, hence these issues were cleaned as seen in the Wrangle-act notebook. After cleaning, the individual dataset were merged into a master document which was used for analysis.</p><h4 name="3e3c" id="3e3c" class="graf graf--h4 graf-after--p">Insights and Visualization</h4><p name="ef8f" id="ef8f" class="graf graf--p graf-after--h4">The following questions were generated for the purpose of analysis;</p><ul class="postList"><li name="5313" id="5313" class="graf graf--li graf-after--p">Is there any correlation between retweet_count and favorite_count?</li><li name="6e7a" id="6e7a" class="graf graf--li graf-after--li">What is the most common tweet source?</li><li name="2b43" id="2b43" class="graf graf--li graf-after--li">Is there any relationship between tweet source and retweet_count as well as favorite_count?</li><li name="7d96" id="7d96" class="graf graf--li graf-after--li">Day of the week with the highest tweet</li><li name="8c7e" id="8c7e" class="graf graf--li graf-after--li">Which dog_stage has the highest retweet and favorites?</li><li name="aaa1" id="aaa1" class="graf graf--li graf-after--li">Top 10 dog breeds based on retweet_count and favorite_count ?</li></ul><h4 name="8a74" id="8a74" class="graf graf--h4 graf-after--li">Insight 1- Correlation between retweet_count and favorite_count</h4><p name="d8b2" id="d8b2" class="graf graf--p graf-after--h4">The scatter plot below indicated strong positive correlation between retweet_count and favorite_count. Therefore the more the tweets gets retweeted, the tendency for the like to increase is positive.</p><figure name="2758" id="2758" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*g7btH25fWT1jll90WHgx1Q.png" data-width="412" data-height="279" src="https://cdn-images-1.medium.com/max/800/1*g7btH25fWT1jll90WHgx1Q.png"></figure><h4 name="c2b2" id="c2b2" class="graf graf--h4 graf-after--figure">Insight 2- The most common tweet source</h4><p name="4ee5" id="4ee5" class="graf graf--p graf-after--h4">From the dataset gathered, the tweets sources were originally 4 listed below</p><ul class="postList"><li name="bfe3" id="bfe3" class="graf graf--li graf-after--p">Twitter for iPhone</li><li name="098a" id="098a" class="graf graf--li graf-after--li">Twitter Web Client</li><li name="f23b" id="f23b" class="graf graf--li graf-after--li">Vine — Make a Scene</li><li name="87a4" id="87a4" class="graf graf--li graf-after--li">Tweet Deck</li></ul><p name="f310" id="f310" class="graf graf--p graf-after--li">After cleaning, Vine- Make a scene was eliminated. The below represents a smaller sample of the overall dataset. As shown in the visualization below, the most common tweet source is ‘Twitter for iPhone’.</p><figure name="5e71" id="5e71" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*nBtRbLwTdCpyv6360rP7rg.png" data-width="510" data-height="578" src="https://cdn-images-1.medium.com/max/800/1*nBtRbLwTdCpyv6360rP7rg.png"></figure><h4 name="15f7" id="15f7" class="graf graf--h4 graf-after--figure">Insight 3- Tweet source relationship with retweet count and favorite count</h4><p name="0b90" id="0b90" class="graf graf--p graf-after--h4">From the visualization below, The most common tweet source has the highest average retweet and favorite count. This could also be as a result of other factors.</p></div><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure name="22bc" id="22bc" class="graf graf--figure graf--layoutOutsetRow is-partialWidth graf-after--p" style="width: 49.943%;"><img class="graf-image" data-image-id="1*zEULCCbIJdUaRwEL8KvK-w.png" data-width="510" data-height="578" src="https://cdn-images-1.medium.com/max/600/1*zEULCCbIJdUaRwEL8KvK-w.png"></figure><figure name="623b" id="623b" class="graf graf--figure graf--layoutOutsetRowContinue is-partialWidth graf-after--figure" style="width: 50.057%;"><img class="graf-image" data-image-id="1*ECEwTbM7iFjLOAYmBiATjA.png" data-width="511" data-height="578" src="https://cdn-images-1.medium.com/max/600/1*ECEwTbM7iFjLOAYmBiATjA.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><h4 name="dc2d" id="dc2d" class="graf graf--h4 graf-after--figure">Insight 4- Day of the week with the highest tweet.</h4><p name="c46d" id="c46d" class="graf graf--p graf-after--h4">From the visualization below, <strong class="markup--strong markup--p-strong">Monday</strong> has the highest number of tweets, followed by friday and thursday. With this i can say i look forward to seeing new dog tweets on mondays.</p><figure name="92ac" id="92ac" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*uKDexQuH8q0g3H2-T4FRbg.png" data-width="504" data-height="544" src="https://cdn-images-1.medium.com/max/800/1*uKDexQuH8q0g3H2-T4FRbg.png"></figure><h4 name="bc5b" id="bc5b" class="graf graf--h4 graf-after--figure">Insight 5-Dog stage with highest retweet and favorite count</h4><p name="dead" id="dead" class="graf graf--p graf-after--h4">The various unique dog stages present in the dataset includes doggo, puppo, floof, pupper, doggo-puppo, doggo-pupper. From the visualization below, <strong class="markup--strong markup--p-strong">Doggo-Puppo</strong> has the highest average retweets and favorite count.</p></div><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure name="2e3c" id="2e3c" class="graf graf--figure graf--layoutOutsetRow is-partialWidth graf-after--p" style="width: 50%;"><img class="graf-image" data-image-id="1*_Emy1Ljuh-p6Cc3RRk5n_Q.png" data-width="516" data-height="556" src="https://cdn-images-1.medium.com/max/600/1*_Emy1Ljuh-p6Cc3RRk5n_Q.png"></figure><figure name="c813" id="c813" class="graf graf--figure graf--layoutOutsetRowContinue is-partialWidth graf-after--figure" style="width: 50%;"><img class="graf-image" data-image-id="1*rYq8ded0AQytAr6GhRNBUQ.png" data-width="516" data-height="556" src="https://cdn-images-1.medium.com/max/600/1*rYq8ded0AQytAr6GhRNBUQ.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><h4 name="fbe2" id="fbe2" class="graf graf--h4 graf-after--figure">Insight 6-Top 10 dog breeds based on retweet_count and favorite_count</h4><p name="64bc" id="64bc" class="graf graf--p graf-after--h4">The bar chart below shows the top 10 dog breed ranked by retweet count and favorite count. The top dog breed is <strong class="markup--strong markup--p-strong">Golden_retriever</strong> having the highest retweet and likes.</p></div><div class="section-inner sectionLayout--outsetRow" data-paragraph-count="2"><figure name="f0d2" id="f0d2" class="graf graf--figure graf--layoutOutsetRow is-partialWidth graf-after--p" style="width: 50%;"><img class="graf-image" data-image-id="1*bCW6aJmb75xA9Kf7I4IRMQ.png" data-width="689" data-height="604" src="https://cdn-images-1.medium.com/max/600/1*bCW6aJmb75xA9Kf7I4IRMQ.png"></figure><figure name="f8dc" id="f8dc" class="graf graf--figure graf--layoutOutsetRowContinue is-partialWidth graf-after--figure" style="width: 50%;"><img class="graf-image" data-image-id="1*umExvUJJieUlV261-TI3tA.png" data-width="689" data-height="604" src="https://cdn-images-1.medium.com/max/600/1*umExvUJJieUlV261-TI3tA.png"></figure></div><div class="section-inner sectionLayout--insetColumn"><h3 name="ae22" id="ae22" class="graf graf--h3 graf-after--figure">Limitations</h3><ul class="postList"><li name="bd45" id="bd45" class="graf graf--li graf-after--h3">The dataset contains lots of missing information hence affecting the adequacy of insights derived.</li><li name="9c64" id="9c64" class="graf graf--li graf-after--li">Inability to extract information for 29 tweet ids using the twitter API</li></ul><h3 name="3ee2" id="3ee2" class="graf graf--h3 graf-after--li">Conclusion</h3><p name="c6f3" id="c6f3" class="graf graf--p graf-after--h3 graf--trailing">From executing this project, i understood perfectly the importance of data wrangling, There is indeed lots of data out in the world but most of this data requires wrangling so as to provide accurate and reliable insights. Through this project, I learnt new pandas functions and its applicability. In general, it was FUN.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@wisrzzi" class="p-author h-card">Rosemary Odinigwe</a> on <a href="https://medium.com/p/3b185c2f225c"><time class="dt-published" datetime="2022-09-05T13:58:55.521Z">September 5, 2022</time></a>.</p><p><a href="https://medium.com/@wisrzzi/we-rate-dogs-data-wrangling-project-act-report-3b185c2f225c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on September 5, 2022.</p></footer></article></body></html>
